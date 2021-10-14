@@ -6,6 +6,7 @@ namespace МС
     {
         static void Main(string[] args)
         {
+            var x1 = 456789;
             var p1 = new Process(50, "Main");
             var p2 = new Process(51, "One");
             var p3 = new Process(52, "Two");
@@ -20,7 +21,6 @@ namespace МС
         static void withQueue(BusQue bus, Process p1, Process p2, Process p3)
         {
             for (int i = 0; i < 10; i++)
-                for(string k = ""; k=="ds";)
             {
                 bus.getQueue(p1, p2, p3);
                 bus.Send();

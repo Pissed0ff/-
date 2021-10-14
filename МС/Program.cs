@@ -20,7 +20,7 @@ namespace МС
         static void withQueue(BusQue bus, Process p1, Process p2, Process p3)
         {
             for (int i = 0; i < 10; i++)
-                for(int k = 1; k<50;k++)
+                for(string k = ""; k=="ds";)
             {
                 bus.getQueue(p1, p2, p3);
                 bus.Send();

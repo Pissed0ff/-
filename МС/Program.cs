@@ -19,7 +19,7 @@ namespace МС
 
         static void withQueue(BusQue bus, Process p1, Process p2, Process p3)
         {
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < 100; i++)
             {
                 bus.getQueue(p1, p2, p3);
                 bus.Send();
@@ -61,7 +61,7 @@ namespace МС
 
         static void withoutQueue(Bus bus, Process p1, Process p2, Process p3)
         {
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < 100; i++)
             {
                 bus.Send(p1, p2, p3);
                 p1.next();
